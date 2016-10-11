@@ -9,6 +9,7 @@ namespace Mocking {
         public string Name { get; set; }
         public string Type { get; set; }
         public int Wage { get; set; }
+        internal MailBox MailBox { get; set; }
 
         internal double CalculateWeeklySalary(int hours, int wage) {
             return hours * wage;
